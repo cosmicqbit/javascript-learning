@@ -106,8 +106,44 @@ console.log('Data type of marks is ' + (typeof marks))
 // Boolean
 
 let raining = true;
-console.log('Is it raining: ' + (typeof raining))
+console.log('Is it raining: ' + raining + (typeof raining))
+
+// Null 
+
+let nullVar = null;
+console.log('Data type is " + (typeof nullVar') // Will return object which is actually bogus
+// Null is basically Primitive DT
+
+// Undefined
+// Undefined
+
+
 // Reference DT : are stored in Heap | Dynamic memmory
 
+// Array
+arr = [1, 2, 4, 'bear', true]
+console.log(arr)
+console.log('Data type is ' + (typeof arr));
+
+// Object Literals
+
+let stMarks = {
+  shariq: 100,
+  amir: 90,
+  jazik: 80
+}
+console.log(stMarks);
+
+// Functions
+
+function findName() {
+  
+}
+console.log(typeof findName);
+
+// Date
+
+let date = new Date();
+console.log(typeof date);
 
 // 
