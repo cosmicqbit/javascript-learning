@@ -88,4 +88,26 @@ numbers.push(6);
 
 console.log(numbers);
 
+// Data Types
 
+// Primitivee DT : are stored in stack 
+
+// Strings 
+
+let name = "cosmicqbit";
+console.log("My username is " + name);
+
+// Numbers 
+
+let marks = 20;
+console.log(marks)
+console.log('Data type of marks is ' + (typeof marks))
+
+// Boolean
+
+let raining = true;
+console.log('Is it raining: ' + (typeof raining))
+// Reference DT : are stored in Heap | Dynamic memmory
+
+
+// 
