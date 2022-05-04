@@ -140,8 +140,8 @@ let myobj = {
     enroll: 23,
     address: 'Njalla',
     marks: [23, 44, 46],
-    passed: true;
-    'phone number': 2323232323;
+    passed: true,
+    'phone number': 2323232323
 }
 
 console.log(myobj.passed) // Will return true
@@ -149,4 +149,24 @@ console.log(myobj['phone number']); // Will return number
 console.log(myobj.enroll); // Dot notation
 
 
+// If Else conditionals & Swtiches
+
+const age = 20;
+
+if (age == 20) {
+    console.log('You are qualified');
+}
+
+else if (age > 20) {
+    console.log('You are too old');
+}
+
+else {
+    console.log('Not for you kiddo');
+}
+
+// == vS === 
+
+// == only compares value so '20' == 20 will be true 
+// === Compares both value & data type, so '20' === 20 will return false
 
