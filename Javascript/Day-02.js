@@ -49,7 +49,45 @@ let mynum = 23; // Number
 let sum = mystr + mynum;
 console.log(sum); // Will return 23423 --> Concatenates as a string
 
+const name = 'cosmicqbit';
+const greeting = 'Salaams!';
 
+console.log(greeting + '' + name);
+
+// String methods
+
+let html;
+html = "<h1>This is the wrong way</h1>" +  "<p>You shoudl avoid using this.</p>";
+
+// Concat method
+html = html.concat('New text', 'new 2.0'); // Will append to the html variable
+console.log(html);
+
+// length method
+console.log(html.length);
+console.log(html.toLowerCase);
+console.log(html.toUpperCase);
+
+
+// Indexing
+console.log(html['2']); 
+
+// Index of
+console.log(html.index['<']);
+console.log(html.lastIndexOf('s')); // Locates last occurance 
+console.log(html.charAt(2));
+console.log(html.endsWith('textend')); // Returns boolean
+console.log(html.includes('p')); // Also returns boolean
+console.log(html.substring(0,3)); // Excluding last index char
+console.log(html.slice(4, 8)); // Also works with -ve values
+console.log(html.split(' ')); // Separates the content at space breakpoints and returns an array
+console.log(html.replace('this', 'if')); // Replaces first occurance of this with if
+
+
+
+// Template literals using backticks
+let html;
+html = 
 
 
 
