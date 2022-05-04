@@ -128,11 +128,25 @@ marks.shift(34); // Removes elements from start
 marks.splice(2, 4); // Removes elements from index 2 and removes 4 elements
 marks.reverse(); // reverses the original array
 
+// Concat arrays
+let marks2 = [23, 434, 44, 23];
 
+marks = marks.concat(marks2) // Concats marks2 to marks1 
 
+// Objects 
 
+let myobj = {
+    name: 'cosmicqbit',
+    enroll: 23,
+    address: 'Njalla',
+    marks: [23, 44, 46],
+    passed: true;
+    'phone number': 2323232323;
+}
 
-
+console.log(myobj.passed) // Will return true
+console.log(myobj['phone number']); // Will return number
+console.log(myobj.enroll); // Dot notation
 
 
 
