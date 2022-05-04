@@ -63,7 +63,7 @@ html = "<h1>This is the wrong way</h1>" +  "<p>You shoudl avoid using this.</p>"
 html = html.concat('New text', 'new 2.0'); // Will append to the html variable
 console.log(html);
 
-// length method
+// length property
 console.log(html.length);
 console.log(html.toLowerCase);
 console.log(html.toUpperCase);
@@ -90,10 +90,35 @@ let name01 = 'Red';
 let name02 = 'Blue';
 let name03 = 'Pink';
 
-let newHTML;
-newHTML = `This is a ${name01} color
-            <p>This is a ${name02} color</p>
-            `;
+let newHTML = `This is a ${name01} color <p>This is a ${name02} color</p>`;
+
+
+// Arrays 
+
+const marks = [34, 56, 64, 76, 56, 34];
+const fruits = ['Orange', 'Apple', 'Pine'];
+const mixed = ['str', 23, [23, 42]];
+
+const testArr = new(13, 'size', true);
+
+
+// Traversing Arrays
+
+console.log(fruits[1]); // Wil return Apple
+
+// isArray Method
+console.log(Array.isArray('mixed')); // Returns boolean
+
+// Updating array
+
+testArr[2] = 'New_value';
+console.log(testArr) // changes valuye of true to New_value
+
+// Index of method
+
+let value = marks.IndexOf(34);
+console.log(value); // Will return the position of number
+
 
 
 

@@ -115,7 +115,6 @@ console.log('Data type is " + (typeof nullVar') // Will return object which is a
 // Null is basically Primitive DT
 
 // Undefined
-// Undefined
 
 
 // Reference DT : are stored in Heap | Dynamic memmory
