@@ -119,6 +119,16 @@ console.log(testArr) // changes valuye of true to New_value
 let value = marks.IndexOf(34);
 console.log(value); // Will return the position of number
 
+// Modifying arrays
+
+marks.push(232); // Adds element to end
+marks.pop(34); // Removes element from end
+marks.unshift(100); // Adds element to start
+marks.shift(34); // Removes elements from start
+marks.splice(2, 4); // Removes elements from index 2 and removes 4 elements
+marks.reverse(); // reverses the original array
+
+
 
 
 
