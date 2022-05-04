@@ -165,10 +165,7 @@ else {
     console.log('Not for you kiddo');
 }
 
-// == vS === 
 
-// == only compares value so '20' == 20 will be true 
-// === Compares both value & data type, so '20' === 20 will return false
 
 const vari = 23;
 
@@ -178,8 +175,13 @@ else
     console.log('Do this');
 
 // Logical Operators 
+
 // && : AND
 // || : OR 
+
+// Comparison operators 
+// == only compares value so '20' == 20 will be true 
+// === Compares both value & data type, so '20' === 20 will return false
 // <= : less than or equal to
 // >= : greater than or equal to 
 
@@ -204,4 +206,28 @@ switch (age) {
         console.log('Invalid')
         break;
 }
+
+// For, while & do While loop
+
+
+// For loop
+for(let i = 20; i < 100; i++)
+{
+    console.log('Number: ' + i);
+}
+
+// while loop
+let j = 20;
+while (j < 1000){
+    console.log(j); // Will print numbers upto 999 starting form 20
+    j += 1;
+}
+
+// do while --> Executes at least once
+
+let k = 20;
+do {
+    console.log(k);
+    k++;
+}while(k < 100);
 
