@@ -231,3 +231,24 @@ do {
     k++;
 }while(k < 100);
 
+// break --> breaks out of the loop altogether
+// continue --> Skips the current iteration / value to be returned
+
+// Iterating / looping over array
+
+let newArr = [23, 23, 34, 45, 656, 333];
+
+// Method 1
+
+for (i = 0; i < newArr.length ; i++) {
+    const element = newArr[i];
+    console.log(element);
+}
+
+// Method 2 || forEach Method
+
+newArr.forEach(function(element){
+    console.log(element);
+}
+);
+
