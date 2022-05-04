@@ -84,10 +84,18 @@ console.log(html.split(' ')); // Separates the content at space breakpoints and 
 console.log(html.replace('this', 'if')); // Replaces first occurance of this with if
 
 
-
 // Template literals using backticks
-let html;
-html = 
+
+let name01 = 'Red';
+let name02 = 'Blue';
+let name03 = 'Pink';
+
+let newHTML;
+newHTML = `This is a ${name01} color
+            <p>This is a ${name02} color</p>
+            `;
+
+
 
 
 
