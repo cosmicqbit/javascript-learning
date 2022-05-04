@@ -26,7 +26,19 @@ stri = Number(false); // Will return 0
 stri = arr = [3,5,6,7,8]; // Will return NaN
 console.log(stri, (typeof stri)); 
 
+// Parse Int --> Returns Integer value from String or a float
 
+let number = parseInt('23.4');
+console.log(number); // Will return 23
+
+// Prase float --> Returns float value from String or Integer
+
+let filoat = parseFloat('23');
+console.log(filoat); // Will return 23.0
+
+// toFixed Method --> Returns value upto 10 decimal points
+
+console.log(number.toFixed(10)); // Will return 10.0000000000
 
 
 
