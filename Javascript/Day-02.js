@@ -41,6 +41,17 @@ console.log(filoat); // Will return 23.0
 console.log(number.toFixed(10)); // Will return 10.0000000000
 
 
+// Type Coercion
+
+let mystr = '234'; // String
+let mynum = 23; // Number
+
+let sum = mystr + mynum;
+console.log(sum); // Will return 23423 --> Concatenates as a string
+
+
+
+
 
 
 
