@@ -170,3 +170,38 @@ else {
 // == only compares value so '20' == 20 will be true 
 // === Compares both value & data type, so '20' === 20 will return false
 
+const vari = 23;
+
+if (typeof vari !== 'undefined')
+    console.log('Do this');
+else 
+    console.log('Do this');
+
+// Logical Operators 
+// && : AND
+// || : OR 
+// <= : less than or equal to
+// >= : greater than or equal to 
+
+// Terinatry Operator
+
+console.log(isSkilled? 'Hire the guy': 'Not eligible');
+
+
+// Switch Statement
+
+switch (age) {
+    case 19:
+        console.log('You are 19');
+        break; // breaks out of the loop
+    case 23:
+        console.log('You are 23');
+        break;
+    case 22:
+        console.log('You are 22');
+        break;
+    default:
+        console.log('Invalid')
+        break;
+}
+
