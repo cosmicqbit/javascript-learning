@@ -252,3 +252,16 @@ newArr.forEach(function(element){
 }
 );
 
+
+// iteating over object
+
+let obj = {
+    name: "Valid name",
+    age: 22,
+    address: "invalid"
+}
+
+for (let key in obj) 
+{
+    console.log(key + ' ' + obj[key]);
+}
