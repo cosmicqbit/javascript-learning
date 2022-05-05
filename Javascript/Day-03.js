@@ -99,3 +99,63 @@ console.log(`Loop: ${a}`);
 }
 
 console.log('Global Scope: ', a, b, c);
+
+
+// Window Object
+
+// DOM --> Document Object Model 
+// We can use Windows Object Methods like this
+
+// Alert
+window.alert('Hello World');
+// OR SIMPLY
+alert("hello world");
+
+// Prompt --> Prompts a user to type something in the input box
+a = prompt('Type something below & hit okay');
+
+// Confirm 
+a = confirm('Please confirm'); // Okay vs Cancel 
+
+let val;
+
+// Outter height and width
+val = window.outerHeight;
+val = window.outerWidth;
+
+// Inner height and width
+val = window.innerHeight;
+val = window.innerWidth;
+
+// Scroll points
+val = window.scrollY;
+val = window.scrollX;
+
+// Location Object
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
+
+// Redirect
+window.location.href = 'https://wired.com';
+
+//Reload
+window.location.reload();
+
+// History Object
+
+window.history.go(-2);
+val = window.history.length;
+
+// Navigator Object
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
+
+console.log(val);
