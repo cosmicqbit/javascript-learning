@@ -295,5 +295,68 @@ for(let i = 0; i < liEven.length; i++){
   liEven[i].style.background = '#f4f4f4';
 }
 
-
 console.log(items);
+
+// Creating elements
+
+// Create element
+const elemento = document.createElement('li');
+
+// Add class
+elemento.className = 'collection-item';
+
+// Add id
+elemento.id = 'new-item';
+
+// Add attribute
+elemento.setAttribute('title', 'New item');
+
+// Inner Text
+
+elemento.innerText = "This is new list item";
+
+// Pusing li into the actual <ul> in the DOM
+
+let ul = document.querySelector('ul.list');
+ul.appendChild(elemento);
+
+// Create text node and append
+li.appendChild(document.createTextNode('Hello World'));
+
+// Create new link element
+const link = document.createElement('a');
+// Add classes
+link.className = 'delete-item secondary-content';
+// Add icon html
+link.innerHTML = '<i class="fa fa-remove"></i>';
+
+// Append link to li
+li.appendChild(link);
+
+// Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+
+console.log(li);
+
+// Replacing Items
+
+// Create new Item
+let elem2 = document.createElement('h3');
+
+// Add Id & class
+elem2.id = 'new-item';
+elem2.className = 'new-item';
+
+let tnode = document.createTextNode('This is h3 tag').appendChild(tnode);
+
+elemento.replaceWith(elem2);
+
+// OR 
+
+// Get the Old heading 
+const oldHeading = document.getElementById('task-title');
+//Parent 
+const cardAction = document.querySelector('.card-action');
+
+//Replace 
+cardAction.replaceChild(newHeading, oldHeading);
