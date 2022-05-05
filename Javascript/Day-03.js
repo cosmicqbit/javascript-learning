@@ -117,7 +117,6 @@ a = prompt('Type something below & hit okay');
 // Confirm 
 a = confirm('Please confirm'); // Okay vs Cancel 
 
-let val;
 
 // Outter height and width
 val = window.outerHeight;
@@ -164,8 +163,6 @@ console.log(val);
 // Windows is in global scope that is why we can omit it 
 // DOM 
 
-let val;
-
 val = document;
 val = document.all;
 val = document.all[2];
@@ -204,3 +201,41 @@ scriptsArr.forEach(function(script) {
 });
 
 console.log(val);
+
+// Element Selectors 
+
+// Single Element Selector
+
+let element = document.getElementById('myfirst');
+element = element.className;
+element = element.childNodes;
+element = element.parentNode;
+
+// Change styling 
+element.style.background = '#333';
+element.style.color = '#fff';
+element.style.padding = '5px';
+element.style.display = 'none';
+
+// // Change content
+element.textContent = 'Task List';
+element.innerText = 'My Tasks';
+element.innerHTML = '<span style="color:red">Task List</span>';
+
+
+// querySelector 
+
+document.querySelector()
+
+console.log(document.querySelector('#task-title'));
+console.log(document.querySelector('.card-title'));
+console.log(document.querySelector('h5'));
+
+document.querySelector('li').style.color = 'red';
+document.querySelector('ul li').style.color = 'blue';
+
+document.querySelector('li:last-child').style.color = 'red';
+document.querySelector('li:nth-child(3)').style.color = 'yellow';
+document.querySelector('li:nth-child(4)').textContent = 'Hello World';
+document.querySelector('li:nth-child(odd)').style.background = '#ccc';
+document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
