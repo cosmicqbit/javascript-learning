@@ -64,3 +64,28 @@ function runEvent(e) {
   document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
 }
 
+// local & sessionStorage
+
+localStorage.setItem('name', 'wired'); // Will save key pair value 
+localStorage.setItem('enroll', 87); // Will save key pair value 
+
+// Retrieve the item
+localStorage.getItem('name'); // will return the key pair value
+
+// clear the local storage 
+localStorage.clear();
+
+// Clear a particular keyvalue pair
+localStorage.removeItem('name');
+
+
+let impArray = ['toys', 'fruits', 'vegs'];
+
+localStorage.setItem('Items', impArray); // This will save the array as string
+
+// Solution
+localStorage.setItem('Item', JSON.stringify(impArray));
+let value = JOSN.parse(localStorage.getItem('Item'));
+console.log(value); // Will return an object
+
+
