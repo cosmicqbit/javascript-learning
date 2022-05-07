@@ -88,3 +88,17 @@ car.name; // Will return Maruti
 
 // Constructor
 
+function GeneralCar(givenName, givenSpeed){
+    this.name = name;
+    this.topSpeed = givenSpeed;
+    this.run = function(){
+        console.log(`${this.name} is running`);
+    }
+}
+
+let car1 = new GeneralCar('Nissan', 200);
+console.log(car1);
+
+car1.name;
+car1.run();
+
