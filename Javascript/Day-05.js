@@ -41,5 +41,23 @@ z = Math.random(); // random number btw 1 & 10
 z = 50 + (100 - 50)*Math.random(); // prints btw 50 & 100
 z = 10 + (100 -10)*Math.random(); // prints btw 10 & 100
 
+console.log(z);
+
 // Use ceil to get integer from random numbers
 
+// Date & Time
+
+let today = new Date(); // Prints current date
+
+let anotherDay = new Date('23 June 2022'); 
+anotherDay = new Date('23 June 2022 12:04:45'); 
+
+let output = anotherDay.getDay();
+output = anotherDay.getDate(); // Date like 12
+output = anotherDay.getMinutes(); 
+output = anotherDay.getHours(); 
+output = anotherDay.getSeconds(); 
+output = anotherDay.getTime(); // Time Stamp Calculates from 1 Jan 1970  
+output = anotherDay.getMonth();   
+output = anotherDay.getMilliseconds();   
+console.log(output); // Outputs day while 0 stands for Sunday 
