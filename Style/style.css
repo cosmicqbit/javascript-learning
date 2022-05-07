@@ -66,3 +66,12 @@ ul {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+.editor, .card{
+    margin: 2px 10px;
+}
+
+.editor li {
+    font-size: 1.2rem;
+    list-style-type: square;
+}

@@ -11,6 +11,3 @@ Array.from(get).forEach(function(element) {
     }
 })
 
-
-
- 
