@@ -36,9 +36,10 @@
           </ul>
           <form class="d-flex">
             <input
-              class="form-control me-2"
+              class="form-control me-2 search"
               type="search"
               placeholder="Search"
+              id="searchTxt"
               aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
@@ -50,18 +51,26 @@
     </nav>
 
     <div class="container my-5 px-5">
-      <h1>Welcome to Your Notes App</h1>
+      <h1>Start adding notes</h1>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Add a note</h5>
           <div class="mb-3">
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <textarea class="form-control" id="addTxt" rows="3"></textarea>
           </div>
-          <a href="#" class="btn btn-primary add-btn">Add note</a>
+          <button class="btn btn-primary" id="addBtn">Add note</button>
+        </div>
+      </div>
+      <hr />
+      <h1 class="my-3">Saved Notes</h1>
+      <hr />
+      <div id="notes" class="row container-fluid">
+        <div class="noteCard card my-2 mx-2" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Note</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">Delete note</a>
+          </div>
         </div>
       </div>
     </div>
@@ -71,6 +80,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script href="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
