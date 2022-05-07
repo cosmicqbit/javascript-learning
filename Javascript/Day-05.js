@@ -60,4 +60,13 @@ output = anotherDay.getSeconds();
 output = anotherDay.getTime(); // Time Stamp Calculates from 1 Jan 1970  
 output = anotherDay.getMonth();   
 output = anotherDay.getMilliseconds();   
+
+// Set Date
+anotherDay.setDate(12);
+anotherDay.setMonth(3);
+anotherDay.setHour(3);
+anotherDay.setSeconds(33);
+
 console.log(output); // Outputs day while 0 stands for Sunday 
+
+
