@@ -89,7 +89,7 @@ car.name; // Will return Maruti
 // Constructor
 
 function GeneralCar(givenName, givenSpeed){
-    this.name = name;
+    this.name = givenName;
     this.topSpeed = givenSpeed;
     this.run = function(){
         console.log(`${this.name} is running`);
@@ -105,4 +105,22 @@ console.log(carCreate);
 carCreate.name;
 carCreate.run();
 carCreate.analyse;
+
+
+// Prototypes
+
+let newObj = {
+    name: 'Rahid',
+    enroll: 78,
+    isCR: 'yes',
+    goRun : function(){
+        return 'I am running';
+    }
+}
+
+function newObj(givenName){
+    this.name = givenName;
+}
+
+// Will create the new property in newObj constructor
 
