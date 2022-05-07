@@ -70,3 +70,21 @@ anotherDay.setSeconds(33);
 console.log(output); // Outputs day while 0 stands for Sunday 
 
 
+// Object Literals, Constructors & Object Oriented JS
+
+
+// Object Literal
+let car = {
+    name: 'Maruti',
+    topSpeed: 90,
+    run: function run(){
+        console.log('Car is running');
+    }
+}
+
+car.run(); // Prints Car is running
+car.name; // Will return Maruti
+
+
+// Constructor
+
