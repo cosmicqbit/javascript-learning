@@ -94,11 +94,15 @@ function GeneralCar(givenName, givenSpeed){
     this.run = function(){
         console.log(`${this.name} is running`);
     }
+    this.analyse = function(){
+        console.log(`This car is slower by ${200 - this.topSpeed} than Mercedes`);
+    }
 }
 
-let car1 = new GeneralCar('Nissan', 200);
-console.log(car1);
+carCreate = new GeneralCar('Nissan', 200);
+console.log(carCreate);
 
-car1.name;
-car1.run();
+carCreate.name;
+carCreate.run();
+carCreate.analyse;
 
