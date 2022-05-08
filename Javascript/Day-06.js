@@ -1,5 +1,6 @@
 // Prototype Inheritance
 
+// Object
 const proto = {
     agenda: function(){
         return `let's call it a day & bid goodbye`;
@@ -9,6 +10,7 @@ const proto = {
     }
 }
 
+// Create object using Object.create method
 const mosh = Object.create(proto);
 mosh.name = 'Mosh Hamedani';
 mosh.job = 'Programmer';
@@ -56,3 +58,57 @@ Programmer.prototype = Object.create(Employee.prototype);
 // Manually set the constructor
 
 Programmer.prototype.constructor = Programmer;
+
+
+// CLASSES
+
+class Student {
+    constructor(givenName, givenAge, givenEnroll) {
+        this.name = givenName;
+        this.age = givenAge;
+        this.enroll = givenEnroll;
+    }
+
+    motto(){
+        return `${this.name} must strive to refrom myself & the entire world. InSha Allah`;
+    }
+
+    joiningYear(){
+        return `You have been here for ${givenAge - 6} years`;
+    }
+
+    static add(a,b) {
+        return a + b;
+    }
+}
+
+cosmicqbit = new Student('cosmicqbit', 21, 1);
+console.log(cosmicqbit);
+console.log(cosmicqbit.motto());
+console.log(cosmicqbit.joiningYear());
+console.log(Student.add(2, 4));
+
+// Inheritance in classes
+
+class Teacher extends Student {
+    constructor(givenName, givenAge, givenEnroll, language, dribble){
+        super(givenName, givenAge, givenEnroll);
+        this.language = language;
+        this.dribble = dribble;
+    }
+    
+    favoriteLanguage(){
+        if(this.language == 'python'){
+            return `Python`;
+        }
+        else {
+            return `JS`;
+        }
+    }
+
+    static Multiply(a, b){
+        return a * b;
+    }
+}
+
+
