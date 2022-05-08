@@ -111,4 +111,5 @@ class Teacher extends Student {
     }
 }
 
-
+wired = new Teacher("wired", 21, 1, js, wired);
+console.log(wired);
