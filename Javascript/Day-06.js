@@ -113,3 +113,5 @@ class Teacher extends Student {
 
 wired = new Teacher("wired", 21, 1, js, wired);
 console.log(wired);
+console.log(wired.favoriteLanguage());
+console.log(wired.Multiply(3, 4));
