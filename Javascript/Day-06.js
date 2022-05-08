@@ -43,3 +43,16 @@ function Programmer(name, salary, experience, language){
     this.language = language;
 }
 
+
+// Programming 
+
+let amir = new Programmer("Amir", 200, 1, "JS");
+console.log(amir); // Won't inherit the Slogan prototype : amir.slogan won't work
+
+// Inheriting the prototype
+
+Programmer.prototype = Object.create(Employee.prototype);
+
+// Manually set the constructor
+
+Programmer.prototype.constructor = Programmer;
