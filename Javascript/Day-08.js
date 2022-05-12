@@ -69,3 +69,21 @@ function getUsers(){
 }
 
 getUsers();
+
+// Sending POST request usign fetch API 
+
+function postUsers() {
+    url = '';
+    data = '{"name":"filesss","salary":"123","age":"123"}'
+    params = {
+        method: 'post',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body : data 
+    }
+    fetch(url, params).then(response => response.json())
+    .then(data => console.log(data)
+    )
+}
+
