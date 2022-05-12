@@ -87,3 +87,14 @@ function postUsers() {
     )
 }
 
+// async / await
+
+async function wired() {
+    const response = await fetch('https://api.github.com/users');
+    const users = await response.json();
+    return users;
+}
+
+let ifResolved = wired();
+ifResolved.then(data => console.log(data))
+
