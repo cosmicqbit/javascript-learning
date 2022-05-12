@@ -39,3 +39,8 @@ const argGreet_01 = name => 'Good Morning ' + name; // parenthesis can be ditche
 console.log(argGreet(qbit));
 
 
+// Accepting multiple args
+
+const multiArgs = (arg1, arg2) => 'Names are : ' + arg1 + arg2;
+console.log(multiArgs(arg1, arg2));
+
