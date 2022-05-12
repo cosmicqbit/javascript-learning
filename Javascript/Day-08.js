@@ -44,3 +44,28 @@ console.log(argGreet(qbit));
 const multiArgs = (arg1, arg2) => 'Names are : ' + arg1 + arg2;
 console.log(multiArgs(arg1, arg2));
 
+// Fetch API
+
+function getData(){
+    url = "file.txt";
+    fetch(url).then((response) => {
+        return response.text();
+    }).then((data) => {
+        console.log(data);
+    })
+}
+
+getData();
+
+// Fetchign github users first 100
+
+function getUsers(){
+    url = "https://api.github.com/users";
+    fetch(url).then((response) => {
+        return response.json(); // To parse json as object
+    }).then((data) => {
+        console.log(data);
+    })
+}
+
+getUsers();
